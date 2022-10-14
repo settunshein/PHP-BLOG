@@ -9,7 +9,6 @@ $posts      = get_all_posts();
         <div class="row">
             <div class="col-md-8">
                 <div class="row">
-                    
                     <?php foreach($posts as $post): ?>
                     <div class="col-md-6 post-blk">
                         <div class="blog1-post-holder">
@@ -55,10 +54,8 @@ $posts      = get_all_posts();
                         </div>
                     </div>
                     <?php endforeach; ?>
-
                 </div>
             </div>
-
             <?php include('include/sidebar.php'); ?>
         </div>
     </div>

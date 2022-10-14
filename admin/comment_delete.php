@@ -1,7 +1,9 @@
 <form action="comment_index.php" style="display: inline">
     <input type="hidden" value="<?=$comment->id?>" name="del_comment_id">
+
     <div class="container">
         <div class="row">
+
             <div class="modal fade" tabindex="-1" role="dialog" id="showDeleteCommentModal<?=$comment->id?>">
                 <div class="modal-dialog modal-dialog-centered" role="document">
 
@@ -38,4 +40,5 @@
 
         </div>
     </div>
+    
 </form>

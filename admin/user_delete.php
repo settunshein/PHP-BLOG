@@ -1,7 +1,9 @@
 <form action="user_index.php" style="display: inline;">
     <input type="hidden" value="<?=$user->id?>" name="del_user_id">
+
     <div class="container">
         <div class="row">
+
             <div class="modal fade" tabindex="-1" role="dialog" id="showDeleteUserModal<?=$user->id?>">
                 <div class="modal-dialog modal-dialog-centered" role="document">
 
@@ -38,4 +40,5 @@
 
         </div>
     </div>
+    
 </form>

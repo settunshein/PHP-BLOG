@@ -1,8 +1,9 @@
 <form action="post_index.php" style="display: inline;">
-
     <input type="hidden" value="<?=$post->id?>" name="del_post_id">
+
     <div class="container">
         <div class="row">
+            
             <div class="modal fade" tabindex="-1" role="dialog" id="showDeletePostModal<?=$post->id?>">
                 <div class="modal-dialog modal-dialog-centered" role="document">
 
@@ -39,4 +40,5 @@
 
         </div>
     </div>
+
 </form>

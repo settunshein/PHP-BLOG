@@ -490,7 +490,6 @@ function insert_comment()
         $email   = $_POST['email'];
         $comment = $_POST['comment'];
         
-
         $query = "INSERT INTO comments(post_id, name, email, comment, created_at)
                   VALUES('$post_id', '$name', '$email', '$comment', now())";
         mysqli_query($conn, $query);
@@ -573,7 +572,7 @@ function register()
         }
 
         if( !filter_var($email, FILTER_VALIDATE_EMAIL) ){
-            show_alert_message('Invalid Email', 'error');
+            show_alert_message('Invalid Email Format', 'error');
             redirect_back();
             exit();
         }

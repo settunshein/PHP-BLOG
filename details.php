@@ -10,7 +10,6 @@ $comments   = get_all_comments($post->id);
 <section class="sec-tpadding-2 section-light sec-content-blk">
     <div class="container">
         <div class="row">
-
             <div class="col-md-8">
                 <div class="col-md-12 nopadding">
                     <div class="blog1-post-holder">
@@ -113,9 +112,7 @@ $comments   = get_all_comments($post->id);
                     </div>
                 </div>
             </div>
-
             <?php include('include/sidebar.php'); ?>
-
         </div>
     </div>
 </section>
