@@ -37,16 +37,21 @@ function insert_post_data()
     $text = "
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus sed iste similique, doloremque iusto minus ea odit eligendi veniam, asperiores autem aperiam quisquam! Repellat, dignissimos atque. Adipisci labore magnam tempore?
     ";
-    
 
     foreach( $objs as $obj ){
         $slug    = strtolower(preg_replace('/[^A-Za-z0-9-]+/', '-', $obj->title));
         $user_id = rand(1, 5);
+        $rand = rand(1, 24);
+        if($rand < 10){
+            $image = 'img_post_0'.$rand.'.jpg';
+        }else{
+            $image = 'img_post_'.$rand.'.jpg';
+        }
         $query = "
             INSERT INTO 
-                posts (category_id, user_id, title, slug, post_tag, content, status, created_at)
+                posts (category_id, user_id, title, slug, image, post_tag, content, status, created_at)
             VALUES
-                ('$obj->category_id', '$user_id', '$obj->title', '$slug', '$obj->post_tag', '$text', 1, '$obj->created_at')
+                ('$obj->category_id', '$user_id', '$obj->title', '$slug', '$image', '$obj->post_tag', '$text', 1, '$obj->created_at')
         ";
         mysqli_query($conn, $query);
     }

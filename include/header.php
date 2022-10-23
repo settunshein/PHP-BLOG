@@ -159,6 +159,42 @@ include('include/header_include.php');
 			font-size: 12px;
 		}
 
+		/* Styling Pagination */
+        .pagination{
+            border-radius: 0; 
+        }
+
+        .pagination > .active > a,
+        .pagination > .active > a:focus,
+        .pagination > .active > a:hover,
+        .pagination > .active > span:focus,
+        .pagination > .active > span:hover {
+            color: #FFF;
+            background-color: #dbdc33 !important;
+            border: .5px solid #dbdc33 !important;
+        }
+
+        .pagination > li > a, 
+        .pagination > li > span {
+           color: #dbdc33 !important;
+		   border: .5px solid #dbdc33 !important;
+		   display: inline-block;
+		   text-align: center;
+		   padding: 10px 15px;
+		   min-width: 42px;
+        }
+        
+        .page-item:first-child .page-link,
+        .page-item:last-child .page-link{
+            border-radius: 0;
+        }
+
+        .page-item.active .page-link {
+            color: #FFF !important;
+            background-color: #dbdc33 !important;
+            border: .5px solid #dbdc33 !important;
+        }
+
 		/* Custom Class */
 		.fw-600 {
 			font-weight: 600;

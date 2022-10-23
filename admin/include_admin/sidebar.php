@@ -62,14 +62,12 @@
                     Profile
                 </a>
             </li>
-            <!--
             <li class="nav-item">
                 <a class="nav-link" href="../db_seed.php">
                     <span data-feather="database"></span>
                     Database Seeding
                 </a>
             </li>
-            -->
             <li class="nav-item">
                 <form method="GET">
                     <button type="submit" class="text-left nav-link border-0 d-block w-100 logout-btn" name="logout">
